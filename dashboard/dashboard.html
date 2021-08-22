@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<style>
+
+
+        .loader {
+          /* border: 16px solid #f3f3f3;
+          border-radius: 50%;
+          border-top: 16px solid blue;
+          border-bottom: 16px solid blue; */
+          width: 120px;
+          height: 120px;
+          -webkit-animation: spin 1s linear infinite;
+          animation: spin 2s linear infinite;
+        }
+        
+        @-webkit-keyframes spin {
+          0% { -webkit-transform: rotate(0deg); }
+          100% { -webkit-transform: rotate(360deg); }
+        }
+        
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+      
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+#regForm {
+  border: 3px solid #FFFF00;
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+#regForm:hover {
+    
+    color: #050801;
+    box-shadow:  0 0 5px #FFFF00,
+    0 0 25px #FFFF00,
+    0 0 50px #FFFF00,
+    0 0 100px #FFFF00;
+
+}
+
+h1 {
+  text-align: center;  
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #FFFF00;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color: #ffffff;
+  color:  #FFFF00;
+  border: 2px solid #FFFF00;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+button:hover  {
+  opacity: 0.8;
+  background-color: #FFFF00;
+    color: #050801;
+    box-shadow:  0 0 5px #FFFF00,
+    0 0 25px #FFFF00,
+    0 0 50px #FFFF00,
+    0 0 100px #FFFF00;
+}
+#prevBtn:hover{
+  background-color: #FFFF00;
+    color: #050801;
+    box-shadow:  0 0 5px #FFFF00,
+    0 0 25px #FFFF00,
+    0 0 50px #FFFF00,
+    0 0 100px #FFFF00;
+}
+
+#prevBtn {
+  background-color: #ffffff;
+  color: #FFFF00;
+  border: 2px solid  #FFFF00;
+  border-radius: 30px;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color:  #FFFF00;
+  /* border: none;   */
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color:  #FFFF00;
+}
+h1{
+  color:#FFFF00;
+}
+
+/* only home button */
+a{
+    text-decoration: none!important;
+}
+#home {
+    background-color: #FFFF00;
+    border: none;
+    color: #FFFF00;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+    border-radius: 30px;
+}  
+
+#home{
+
+    text-decoration: none;
+    color:#FFFF00;
+    border:2px solid  #FFFF00;
+}
+#home:hover{
+    background-color: #FFFF00;
+    color: #050801;
+    box-shadow:  0 0 5px #FFFF00,
+    0 0 25px #FFFF00,
+    0 0 50px #FFFF00,
+    0 0 100px #FFFF00;
+
+}
+#home:active {
+  background-color: black;
+  box-shadow: 0 5px #FFFF00;
+  transform: translateY(4px);}
+  a{
+      color:white;
+  }
+
+</style>
+<title>Sign Up</title>
+<link rel="icon" type="image/x-icon" href="../assets/logo.png">
+</head>
+<body>
+
+ 
+
+
+  <!-- Navigation bar -->
+  <div style="background-color: black;">
+    <img  id="logo" src="../assets/logo.png" width="100px" height="100px">
+    <button id="home"><a href="../index.html">Home</a></button>
+
+    
+    <hr color="#FFFF00">
+
+<form id="regForm" action="/action_page.php">
+  <h1><font size="+7">Dashboard</font></h1>
+  <form id="regForm" action="/action_page.php">
+
+    <table class="table" style="background-color: blanchedalmond; width: 100%;">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">E-Mail</th>
+          <th scope="col">Phone NO</th>
+          <th scope="col">Date of Birth</th>
+          <th scope="col">UserName</th>
+          <th scope="col">Password</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="1">
+          <th scope="col">1</th>
+          <th id="name" scope="col">Muhammad Rashid</th>
+          <th id="email" scope="col">23arashid@gmail.com</th>
+          <th id="phone" scope="col">+923011738215</th>
+          <th id="date" scope="col">10/8/2002</th>
+          <th id="user" scope="col">ras2652</th>
+          <th id="password" scope="col">123456</th>
+          
+        </tr>
+        <thead>
+          <tr>
+            <th scope="col">2</th>
+            <th scope="col">Sharjeel</th>
+            <th scope="col">sharjeel@gmail.com</th>
+            <th scope="col">+923025487854</th>
+            <th scope="col">15/9/2000</th>
+            <th scope="col">sharjeel</th>
+            <th scope="col">Pdsdsfds</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="col">3</th>
+            <th scope="col">mehmad</th>
+            <th scope="col">mehmad@gmail.com</th>
+            <th scope="col">+923052525641</th>
+            <th scope="col">8/6/2003</th>
+            <th scope="col">mehmad</th>
+            <th scope="col">455sd5f64</th>
+            
+          </tr>
+          <thead>
+            <tr>
+              <th scope="col">4</th>
+              <th scope="col">Sahid</th>
+              <th scope="col">Sahid@gmail.com</th>
+              <th scope="col">+923232158471</th>
+              <th scope="col">8/6/2005</th>
+              <th scope="col">sahid</th>
+              <th scope="col">8754654654</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="col">5</th>
+              <th scope="col">Bisharat</th>
+              <th scope="col">23f5djfklsj@gmail.com</th>
+              <th scope="col">+923456895784</th>
+              <th scope="col">5/9/2000</th>
+              <th scope="col">name</th>
+              <th scope="col">3651564</th>
+              
+            </tr>
+    </table>
+    </form>
+</script>
+
+</body>
+</html>
+
+
+
