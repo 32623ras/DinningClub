@@ -1,5 +1,5 @@
 # DinningClub
-Hackathone project
+Hackathone project resturent website
 # Images
 
 ![Screenshot 2021-09-17 at 11 29 40 AM](https://user-images.githubusercontent.com/76033808/133736550-ffcc1ad6-9252-4829-b77c-e77275b76745.png)
